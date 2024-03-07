@@ -23,7 +23,7 @@ import br.com.fiap.enlace.model.Empresa;
 
 
 @RestController
-@RequestMapping("categoria")
+@RequestMapping("empresa")
 public class EmpresaController {
 
     Logger log = LoggerFactory.getLogger(getClass());
@@ -37,7 +37,7 @@ public class EmpresaController {
 
     @PostMapping
     public ResponseEntity<Empresa> create(@RequestBody Empresa empresa){
-        log.info("Cadastrando categoria {}", empresa);
+        log.info("Cadastrando empresa {}", empresa);
         repository.add(empresa);
         return ResponseEntity.status(HttpStatus.CREATED).body(empresa);
     }
