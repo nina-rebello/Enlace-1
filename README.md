@@ -3,6 +3,7 @@ API do projeto Enlace - Organização e Planejamento de Casamentos
 
 ## Integrantes
 Camila Cunha RM551785
+
 Nina Rebello RM99509
 
 ## Tarefas
