@@ -4,7 +4,7 @@ import java.util.Random;
 
 public record Empresa(Long id, String nome, String icone) {
     public Empresa(Long id, String nome, String icone){
-        this.id = Math.abs( new Random().nextLong() );
+        this.id = (id == null)? Math.abs( new Random().nextLong() ) : id;
         this.nome = nome;
         this.icone = icone;
 
