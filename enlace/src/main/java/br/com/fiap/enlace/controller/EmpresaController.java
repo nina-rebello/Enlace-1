@@ -52,6 +52,7 @@ public class EmpresaController {
         }
 
         //TODO refatorar com stream
+        repository.stream()
 
         return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
     }
