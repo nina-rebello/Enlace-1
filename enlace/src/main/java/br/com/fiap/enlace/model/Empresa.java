@@ -1,13 +1,20 @@
 package br.com.fiap.enlace.model;
 
-import java.util.Random;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.Data;
 
-public record Empresa(Long id, String nome, String icone) {
-    public Empresa(Long id, String nome, String icone){
-        this.id = (id == null)? Math.abs( new Random().nextLong() ) : id;
-        this.nome = nome;
-        this.icone = icone;
+@Data
+@Entity
+public class Empresa {
 
-    }
+    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+    private String nome;
+    private String icone;
     
 }
+
+    
