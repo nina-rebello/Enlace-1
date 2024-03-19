@@ -9,8 +9,7 @@ Nina Rebello RM99509
 ## Tarefas
 
 - [ ] CRUD de Empresas
-- [ ] CRUD de Favoritos
-- [ ] CRUD de Localização
+- [ ] CRUD de Serviços
 - [ ] CRUD de Usuários
 
 ## Documentação da API
